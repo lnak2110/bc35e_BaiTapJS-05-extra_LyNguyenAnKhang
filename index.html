@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- BÀI 1 -->
+    <div id="bai1">
+      <h2>Bài 1</h2>
+      <div>
+        <label>Họ tên: </label>
+        <input type="text" id="hoTen" />
+      </div>
+      <div>
+        <label>Tổng thu nhập năm: </label>
+        <input type="number" id="tongThuNhapNam" />
+      </div>
+      <div>
+        <label>Số người phụ thuộc: </label>
+        <input type="number" id="soNguoiPhuThuoc" />
+      </div>
+      <button id="btnTinhThue">Tính thuế</button>
+      <p id="ketQua1"></p>
+    </div>
+
+    <!-- BÀI 2 -->
+    <div id="bai2">
+      <h2>Bài 2</h2>
+      <div>
+        <label>Loại khách hàng: </label>
+        <select id="loaiKhachHang" onchange="xetSoKetNoi()">
+          <option value="nhaDan">Nhà dân</option>
+          <option value="doanhNghiep">Doanh nghiệp</option>
+        </select>
+      </div>
+      <div>
+        <label>Mã khách hàng: </label>
+        <input type="text" id="maKhachHang" />
+      </div>
+      <div>
+        <label>Số kênh cao cấp: </label>
+        <input type="number" id="soKenhCC" />
+      </div>
+      <div>
+        <label>Số kết nối: </label>
+        <input type="number" id="soKetNoi" disabled />
+      </div>
+      <button id="btnTienCap">Tính tiền cáp</button>
+      <p id="ketQua2"></p>
+    </div>
+
+    <script src="./js/bai_01.js"></script>
+    <script src="./js/bai_02.js"></script>
+  </body>
+</html>
